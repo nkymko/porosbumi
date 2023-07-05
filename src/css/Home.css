@@ -1,0 +1,408 @@
+@charset "utf-8";
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+/* General Styling and Typography */
+
+::-webkit-selection {
+  background-color: #5a9e25;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #5a9e25;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #5a9e25;
+  color: #ffffff;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  color: #797986;
+}
+
+/* General Style End */
+
+/* Top Header */
+header {
+  position: relative;
+  box-shadow: 1px 0px 15px -2px rgba(61, 61, 61, 0.39);
+  -webkit-box-shadow: 1px 0px 15px -2px rgba(61, 61, 61, 0.39);
+  -moz-box-shadow: 1px 0px 15px -2px rgba(61, 61, 61, 0.39);
+}
+
+.walking-ad-section {
+  background-color: #f6f6f6;
+}
+
+.walking-ad-section .container {
+  gap: 4.5rem;
+}
+
+.top-about .navbar-nav .nav-link {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.walking-text-wrapper {
+  width: 700px;
+  overflow: hidden;
+}
+
+.walking-ad {
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+  font-size: 14px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.nav-brand {
+  padding: 25px 10px;
+}
+
+.nav-brand .container {
+  gap: 2rem;
+}
+
+.main-nav {
+  padding: 0;
+  background-color: #fff;
+}
+
+.main-nav .nav-item {
+  box-sizing: border-box;
+  padding: 3px 7px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: ease 0.3s;
+}
+
+.main-nav .category1 {
+  border-bottom: 1px solid #5a9e25;
+}
+
+/* .main-nav .category1 {
+  border-bottom: 1px solid green;
+}
+.main-nav .category2 {
+  border-bottom: 1px solid orangered;
+}
+.main-nav .category3 {
+  border-bottom: 1px solid blue;
+}
+.main-nav .category4 {
+  border-bottom: 1px solid red;
+}
+.main-nav .category5 {
+  border-bottom: 1px solid green;
+} */
+
+.main-nav .nav-item:hover {
+  background-color: #5a9e25;
+  transition: ease 0.3s;
+}
+
+.main-nav .nav-item:hover .nav-link {
+  color: #fff;
+}
+
+/* Top Headers End */
+
+/* News Feed Section */
+.news-feed {
+  padding: 60px 15px;
+  background-color: #f5f5f5;
+}
+
+.news-feed .container {
+  padding: 5px 50px;
+}
+
+.news-feed .card {
+  border-radius: 0;
+  border: none;
+  height: 400px;
+}
+
+.news-feed .card:hover img {
+  cursor: pointer;
+  scale: 1.2;
+  transition: ease-in-out 0.3s;
+}
+
+.news-feed .card img {
+  position: absolute;
+  object-position: center;
+  width: 600px;
+  left: -60%;
+  filter: brightness(70%);
+  transition: ease-in-out 0.3s;
+}
+
+.news-feed .card .card-body {
+  position: absolute;
+  bottom: 0px;
+}
+
+.news-feed .card .card-body .card-text {
+  color: #fff;
+}
+
+.news-feed .card .card-body .update-time {
+  color: #fff;
+  font-size: 13px;
+}
+
+.news-feed .col-padding {
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel-main .carousel-item {
+  height: 400px;
+}
+
+.carousel-main .carousel-item .carousel-caption h5,
+.carousel-main .carousel-item .carousel-caption p {
+  color: white;
+}
+
+.carousel-main .carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+  -webkit-filter: brightness(70%);
+  transition: ease-in-out 0.3s;
+}
+
+.carousel-main .carousel-item:hover img {
+  cursor: pointer;
+  scale: 1.2;
+  transition: ease-in-out 0.3s;
+}
+
+/* End of Newsfeed area */
+
+/* Article Area */
+
+.article {
+  padding: 60px 15px;
+}
+
+.article .container {
+  padding: 5px 50px;
+}
+
+.article .card {
+  border-radius: 0;
+  border: none;
+}
+
+.article .card .card-img-top {
+  border-radius: 0;
+  transition: ease 0.3s;
+}
+
+.article .card .card-title {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  transition: ease 0.3s;
+}
+
+.article .card .card-body {
+  padding: 10px 0px;
+}
+
+.article .card .card-body .update-time {
+  font-size: 14px;
+}
+
+.article .card .card-body .card-title:hover {
+  color: #5a9e25;
+  transition: ease 0.3s;
+}
+
+.article .card .card-img-top:hover {
+  -webkit-filter: brightness(70%);
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.article .category-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e2e2e;
+  display: inline-block;
+  padding: 10px 0px;
+  position: relative;
+  margin: 0px 15px 50px 0px;
+  width: 100%;
+}
+
+.article .heading-sub {
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 9px;
+  text-decoration: none;
+  color: #797986;
+  transition: ease 0.3s;
+}
+
+.article .heading-sub:hover {
+  color: #5a9e25;
+  transition: ease 0.3s;
+}
+
+.article .category-heading .highlight{
+  color: #2e2e2e;
+  background-color: #5a9e25;
+  color: white;
+  padding: 10px 20px;
+}
+
+.iklan-tengah {
+  overflow: hidden;
+  background-color: #f5f5f5;
+  padding: 10px 5px;
+}
+
+/* .article .category-heading::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px; 
+  bottom: 0;
+  width: 10px;
+  background-color: #5a9e25;
+} */
+
+.article .category-heading::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  right: 0;
+}
+
+.horizontal-card-title{
+  font-weight: 700;
+  font-size: 20px;
+  color: #2e2e2e;
+}
+
+.right-inner{
+  padding: 0px 40px;
+}
+
+.right-inner .row{
+  background-color: #f5f5f5;
+}
+
+.carousel-right .carousel-item {
+  height: 500px;
+}
+
+.carousel-right .carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+  -webkit-filter: brightness(70%);
+  transition: ease-in-out 0.3s;
+}
+/* End of Article area */
+
+/* footer */
+
+/* footer */
+
+footer p {
+  font-size: 15px;
+  color: white;
+}
+
+footer h5 {
+  font-weight: 700;
+  color: white;
+}
+
+footer .social-media {
+  text-align: right;
+}
+
+footer .social-media a {
+  padding: 5px 10px;
+}
+
+footer .email {
+  text-decoration: none;
+  color: white;
+}
+
+footer .email:hover {
+  text-decoration: underline;
+}
+
+footer .copyright-section{
+  font-size: 13px;
+}
+
+/* end of footer */
+
+/* Responsive Rule */
+
+.show-xs {
+  display: none;
+}
+
+.hidden-xs {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none;
+  }
+
+  .show-xs {
+    display: block;
+  }
+}
+
+.hidden-md {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .hidden-md {
+    display: none;
+  }
+
+  .show-md {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+}
+
+/* Responsive Rule End */
